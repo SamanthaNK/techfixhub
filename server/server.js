@@ -1,24 +1,24 @@
-const dotenv = require("dotenv");
+import dotenv from "dotenv";
 dotenv.config();
 
-const express = require("express");
-const cors = require("cors");
-const helmet = require("helmet");
-const morgan = require("morgan");
-const rateLimit = require("express-rate-limit");
-const mongoose = require("mongoose");
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
+import morgan from "morgan";
+import rateLimit from "express-rate-limit";
+import mongoose from "mongoose";
 
-const { errorHandler, notFound } = require("./src/middleware/errorMiddleware");
+import { errorHandler, notFound } from "./src/middleware/errorMiddleware.js";
 
-const authRoutes = require("./src/routes/authRoutes");
-const userRoutes = require("./src/routes/userRoutes");
-const repairRoutes = require("./src/routes/repairRoutes");
-const maintenanceRoutes = require("./src/routes/maintenanceRoutes");
-const trainingRoutes = require("./src/routes/trainingRoutes");
-const appointmentRoutes = require("./src/routes/appointmentRoutes");
-const contactRoutes = require("./src/routes/contactRoutes");
-const adminRoutes = require("./src/routes/adminRoutes");
-const inventoryRoutes = require("./src/routes/inventoryRoutes");
+import authRoutes from "./src/routes/authRoutes.js";
+import userRoutes from "./src/routes/userRoutes.js";
+import repairRoutes from "./src/routes/repairRoutes.js";
+import maintenanceRoutes from "./src/routes/maintenanceRoutes.js";
+import trainingRoutes from "./src/routes/trainingRoutes.js";
+import appointmentRoutes from "./src/routes/appointmentRoutes.js";
+import contactRoutes from "./src/routes/contactRoutes.js";
+import adminRoutes from "./src/routes/adminRoutes.js";
+import inventoryRoutes from "./src/routes/inventoryRoutes.js";
 
 const app = express();
 
