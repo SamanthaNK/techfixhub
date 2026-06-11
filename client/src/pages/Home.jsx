@@ -35,10 +35,10 @@ const whyUs = [
 export default function Home() {
     return (
         <div className="animate-fade-in">
-            <section className="relative min-h-[90vh] flex items-center dot-pattern" aria-label="Hero">
+            <section className="relative min-h-[90vh] dot-pattern" aria-label="Hero">
                 <div className="absolute inset-0 bg-bg-secondary/40" />
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-                    <div className="max-w-3xl">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="max-w-xl">
                         <div className="flex items-center gap-2 mb-6">
                             <span className="w-8 h-px bg-accent" />
                             <span className="text-accent text-sm font-display font-semibold tracking-widest uppercase">Cameroon's Technical Hub</span>
@@ -59,6 +59,14 @@ export default function Home() {
                                 <Search size={16} /> Track My Repair
                             </Link>
                         </div>
+                    </div>
+                    <div className="hidden lg:flex items-center justify-center">
+                        <img
+                            src="/heroimg.png"
+                            alt="TechFix Hub technician"
+                            className="h-[90%] w-auto object-contain object-bottom"
+                            draggable="false"
+                        />
                     </div>
                 </div>
             </section>

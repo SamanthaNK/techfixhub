@@ -29,9 +29,11 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <Link to="/" className="flex items-center gap-2.5 group">
-                        <div className="w-8 h-8 bg-primary flex items-center justify-center group-hover:bg-accent transition-colors">
-                            <Wrench size={16} className="text-white" />
-                        </div>
+                        <img
+                            src="/logo.png"
+                            alt="TechFix Hub"
+                            className="h-8 w-auto"   /* adjust height to taste */
+                        />
                         <span className="font-display font-bold text-lg text-text-primary">
                             TechFix<span className="text-accent">Hub</span>
                         </span>

@@ -13,7 +13,7 @@ export default {
         'text-muted': '#9CA3AF',
       },
       fontFamily: {
-        display: ['Syne', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
         body: ['DM Sans', 'sans-serif'],
       },
       animation: {

@@ -8,9 +8,11 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
                         <div className="flex items-center gap-2.5 mb-4">
-                            <div className="w-8 h-8 bg-primary flex items-center justify-center">
-                                <Wrench size={16} className="text-white" />
-                            </div>
+                            <img
+                                src="/logo.png"
+                                alt="TechFix Hub"
+                                className="h-8 w-auto"
+                            />
                             <span className="font-display font-bold text-lg text-text-primary">
                                 TechFix<span className="text-accent">Hub</span>
                             </span>
