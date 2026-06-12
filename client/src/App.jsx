@@ -23,6 +23,7 @@ import ManageUsers from './pages/dashboard/admin/ManageUsers'
 import ManageTraining from './pages/dashboard/admin/ManageTraining'
 import ManageInventory from './pages/dashboard/admin/ManageInventory'
 import ManageAppointments from './pages/dashboard/admin/ManageAppointments'
+import ManageMessages from './pages/dashboard/admin/ManageMessages'
 import Spinner from './components/ui/Spinner'
 
 function ProtectedRoute({ children }) {
@@ -71,6 +72,7 @@ export default function App() {
 
         <Route path="admin/repairs" element={<AdminRoute><ManageRepairs /></AdminRoute>} />
         <Route path="admin/users" element={<AdminRoute><ManageUsers /></AdminRoute>} />
+        <Route path="admin/messages" element={<AdminRoute><ManageMessages /></AdminRoute>} />
         <Route path="admin/training" element={<AdminRoute><ManageTraining /></AdminRoute>} />
         <Route path="admin/inventory" element={<AdminRoute><ManageInventory /></AdminRoute>} />
         <Route path="admin/appointments" element={<AdminRoute><ManageAppointments /></AdminRoute>} />

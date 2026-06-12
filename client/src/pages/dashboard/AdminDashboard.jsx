@@ -21,7 +21,7 @@ export default function AdminDashboard() {
         { icon: Wrench, label: 'Pending Repairs', value: stats.pendingRepairs, to: '/admin/repairs', color: 'text-yellow-400' },
         { icon: GraduationCap, label: 'Active Programs', value: stats.totalPrograms, to: '/admin/training', color: 'text-purple-400' },
         { icon: GraduationCap, label: 'Enrollments', value: stats.totalEnrollments, to: '/admin/training', color: 'text-accent' },
-        { icon: Mail, label: 'Unread Messages', value: stats.unreadMessages, to: '/admin/users', color: 'text-red-400' },
+        { icon: Mail, label: 'Unread Messages', value: stats.unreadMessages, to: '/admin/messages', color: 'text-red-400' },
         { icon: Calendar, label: 'Pending Appointments', value: stats.pendingAppointments, to: '/admin/appointments', color: 'text-orange-400' },
     ] : []
 
